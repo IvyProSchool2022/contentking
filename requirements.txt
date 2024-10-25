@@ -1,3 +1,2 @@
-json
 streamlit==1.32.2
 openai==1.14.2
