@@ -9,7 +9,6 @@ Doctor-Bot is an AI-powered chatbot designed to provide general health advice an
 - [Environment Variables](#environment-variables)
 - [Deployment on Railway](#deployment-on-railway)
 - [Project Structure](#project-structure)
-- [Contributing](#contributing)
 
 ---
 
