@@ -71,16 +71,15 @@ For Railway, you can add the key as an environment variable in the dashboard (ex
 1. Go to the **Settings** tab of your Railway project.
 2. Under **Environment Variables**, add `OPENAI_API_KEY` with your actual OpenAI API key.
 
-### 3. Ensure Relative Paths in Fetch Requests
+### 5. Deployment
 
-In the HTML file (`index.html`), use a relative URL for fetch requests to ensure compatibility on both local and deployed versions:
+Railway will automatically deploy your application after connecting to your GitHub repository. Check the **Deployments** tab and **Logs** to monitor the deployment process.
 
-```javascript
-const response = await fetch('/chat', { 
-    method: 'POST',
-    headers: {
-        'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({ message: userMessage })
-});
-```
+---
+
+## Project Structure
+
+- `app.py`: Main Flask app handling requests and responses.
+- `templates/index.html`: The HTML file for the frontend interface.
+- `static/`: Directory for static files like `favicon.ico` and additional assets.
+- `requirements.txt`: Lists project dependencies for Python.
