@@ -3,12 +3,16 @@ import openai
 import requests
 import json
 from flask_cors import CORS  # Import Flask-CORS
+import os
+
+api_key = os.getenv("api_key")
+
 # Load the API key from the JSON file
-with open("open_ai_api.json") as f:
-    api_key_data = json.load(f)
+# with open("open_ai_api.json") as f:
+#     api_key_data = json.load(f)
 
 # Initialize the OpenAI client with the extracted API key
-api_key=api_key_data['api_key']
+# api_key=api_key_data['api_key']
 
 # Customize your medical advice list if necessary.
 advice_list = '''
