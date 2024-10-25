@@ -71,7 +71,7 @@ For Railway, you can add the key as an environment variable in the dashboard (ex
 1. Go to the **Settings** tab of your Railway project.
 2. Under **Environment Variables**, add `OPENAI_API_KEY` with your actual OpenAI API key.
 
-### 5. Deployment
+### 4. Deployment
 
 Railway will automatically deploy your application after connecting to your GitHub repository. Check the **Deployments** tab and **Logs** to monitor the deployment process.
 
